@@ -1,0 +1,47 @@
+html{
+    font-family: Arial;
+}
+
+#tituloPrincipal{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#bloco{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.itemBloco{
+    color: white;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.descricaoBloco{
+    color: gray;
+}
+
+.pequenaCaixa{
+    display: inline-block;
+    background-color:rgb(248, 188, 78);
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.amareloArial{
+    font-family: Arial !important;
+    color: rgb(248, 188, 78) !important;
+}
+
+.linkBloco{
+   color: black; 
+   text-decoration: none;
+}
