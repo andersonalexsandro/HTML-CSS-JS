@@ -9,8 +9,8 @@ body{
 }
 
 img{
-    max-width: 100%;
-display: block;
+    max-width: 10px;
+    display: block;
 }
 
 a{
