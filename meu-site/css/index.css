@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Minecraft'; /* Dê um nome à sua fonte */
-    src: url("./font-family/minecraft-regular.otf") format("opentype");
+    font-family: 'Minecraft'; 
+    src: url("../font-family/minecraft-regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }
@@ -12,7 +12,7 @@ body{
 }
 
 .div-titulo{
-    background-image: url("./images/desktop-wallpaper-minecraft-stone-block-texture.jpg");
+    background-image: url("../images/desktop-wallpaper-minecraft-stone-block-texture.jpg");
     display: flex;
     height: 100px;
     justify-content: center;
@@ -29,7 +29,6 @@ body{
     margin-bottom: 0px;
     font-family: "Minecraft", Arial, Helvetica, sans-serif;
 }
-
 
 nav ul{
     list-style: none;
