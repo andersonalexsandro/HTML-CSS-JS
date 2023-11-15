@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Minecraft'; /* Dê um nome à sua fonte */
-    src: url("./font-family/Minecraftia-Regular.ttf") format("truetype");
+    src: url("./font-family/minecraft-regular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
   }
@@ -16,33 +16,38 @@ body{
     display: flex;
     height: 100px;
     justify-content: center;
-    padding-top: 25px;
     align-items: center;
 }
 
 .redstone-icon{
     max-width: 50px;
     max-height: 50px;
-    margin-right: 5px;
-    padding-bottom: 20px;
 }
 
 .titulo{
     margin-top: 0px;
     margin-bottom: 0px;
-    font-family: "Minecraft";
+    font-family: "Minecraft", Arial, Helvetica, sans-serif;
 }
 
-nav{
+
+nav ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     gap: 30px;
     padding-left: 15px;
     background-color: rgb(177, 175, 175);
 }
 
-nav h3{
+nav a{
+    font-family: "Minecraft";
     text-transform: uppercase;
     font-size: 15px;
+    color: black;
+    display: block;
+    padding: 10px;
 }
 
 h1{
@@ -61,6 +66,8 @@ h1{
 }
 
 h2{
+    font-family: "Minecraft";
+    text-transform: uppercase;
     margin-top: 50px;
     text-align: center;
 }
