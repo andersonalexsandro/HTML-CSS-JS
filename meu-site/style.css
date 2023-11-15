@@ -6,31 +6,31 @@
   }
 
 body{
+    background-color: rgb(220, 223, 223);
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container-titulo{
+.div-titulo{
     background-image: url("./images/desktop-wallpaper-minecraft-stone-block-texture.jpg");
-    padding-top: 30px;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.redstone-icon{
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 5px;
+    padding-bottom: 20px;
 }
 
 .titulo{
-    display: flex;
-    justify-content: center;
-}
-
-.titulo-item-imagem{
-    width: 50px;
-    height: 50px;
-    text-align: center;
-}
-
-.titulo-item{
-    font-family: "Minecraft";
-    text-align: center;
     margin-top: 0px;
-    margin-left: 5px;
+    margin-bottom: 0px;
+    font-family: "Minecraft";
 }
 
 nav{
@@ -41,6 +41,65 @@ nav{
 }
 
 nav h3{
-    display: inline;
     text-transform: uppercase;
+    font-size: 15px;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.descricao{
+    display: grid;
+    justify-content: center;
+}
+.descricao p{
+    max-width: 750px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+h2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.container-exemplos{
+    display: grid;
+    justify-content: center;
+}
+.exemplos{
+    display: grid;
+    max-width: 750px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.exemplos img{
+    max-width: 100%;
+}
+
+.exemplos h2{
+    background-color:rgb(177, 175, 175);
+    padding: 20px;
+    grid-column: 1/3;
+}
+
+.exemplos a{
+    font-family: "Minecraft";
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    background-color:rgb(177, 175, 175);
+    padding: 20px;
+    grid-column: 1/3;
+}
+
+
+footer{
+    margin-top: 50px;
+    height: 120px;
+    background-image: url("./images/desktop-wallpaper-minecraft-stone-block-texture.jpg");
+
 }
