@@ -2,15 +2,10 @@ body{
     font-family: arial, helvetica, sans-serif;
     margin: 0px;
     margin-top: 60px;
-    background: #f8f8f8;
+    background: #f0f0f0;
     display: grid;
     gap: 60px;
     justify-items: center;
-}
-
-header .logoMarca{
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 img{
@@ -38,25 +33,15 @@ p{
     justify-content: center;
 }
 
-nav .menu{
-    list-style: none;
-}
-
 .menu a{
     background-color: white;
     color: black;
     padding: 15px 30px;
     border-radius: 4px;
     text-transform: uppercase;
-    transition: 0.1s;
-    border: 2px solid transparent;
 }
 
-nav .menu a:hover{
-    border: 2px solid #fcb404;
-}
-
-main{
+.conteudo{
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
@@ -66,19 +51,11 @@ main{
     background-color: white;
     padding: 40px;
     text-align: right;
+    position: relative;
     display: grid;
     align-content: center;
     gap: 10px;
     justify-items: end;
-}
-
-.introducao::before{
-    content: "";
-    display: inline-block;
-    height: 4px;
-    width: 40px;
-    background-color: #fcb404;
-    position: absolute;
 }
 
 .botao{
@@ -87,11 +64,16 @@ main{
     color: white;
     border-radius: 4px;
     text-transform: uppercase;
-    transition: 0.3s;
 }
 
-.botao:hover{
-    background-color: #e0a101;
+.detalhe{
+    width: 60px;
+    height: 4px;
+    background-color: #fcb404;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    right: -30px;
 }
 
 .subtitulo{
@@ -99,7 +81,7 @@ main{
     text-align: end;
     text-transform: uppercase;
     font-size: 64px;
-    padding-right: 20px;
+    padding-right: 40px;
     color: #c5c5c5;
 }
 
@@ -108,19 +90,10 @@ main{
     padding: 40px;
 }
 
-.vantagens-item:nth-child(odd){
-    background-color: #f8f8f8;
-}
-
 .vantagens-item{
     display: grid;
     grid-template-columns: 25px 1fr;
     gap: 10px 20px;
-    padding: 10px;
-}
-
-.vantagens-item:hover{
-    border-left: #fcb404;
 }
 
 .vantagens-item p{
@@ -128,7 +101,7 @@ main{
     padding-bottom: 20px;
 }
 
-footer{
+.rodape{
     text-align: center;
     padding: 30px;
     background-color: white;
