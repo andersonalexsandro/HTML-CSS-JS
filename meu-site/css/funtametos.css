@@ -48,3 +48,9 @@ nav a{
     display: block;
     padding: 10px;
 }
+
+footer{
+    margin-top: 50px;
+    height: 120px;
+    background-image: url("../images/desktop-wallpaper-minecraft-stone-block-texture.jpg");
+}
