@@ -1,0 +1,20 @@
+img{
+    max-width: 100%;
+}
+
+.introducao{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.introducao h1{
+    text-align: center;
+    grid-column: 1/-1;
+}
+
+@media (max-width: 600px) {
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+}
