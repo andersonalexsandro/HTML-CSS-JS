@@ -47,6 +47,11 @@ nav a{
     color: black;
     display: block;
     padding: 10px;
+    border: 1px solid transparent;
+}
+
+nav a:hover{
+    border: 1px solid black;
 }
 
 footer{
