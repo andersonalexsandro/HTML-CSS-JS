@@ -1,5 +1,6 @@
 body{
     font-family: arial, helvetica, sans-serif;
+    margin-right: 0px;
     margin: 0px;
     margin-top: 60px;
     background: #f8f8f8;
@@ -34,7 +35,8 @@ p{
 .menu{
     flex-wrap: wrap;
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 5px;
     justify-content: center;
 }
 
@@ -44,6 +46,7 @@ nav .menu{
 
 .menu a{
     background-color: white;
+    display: block;
     color: black;
     padding: 15px 30px;
     border-radius: 4px;
@@ -83,6 +86,11 @@ main{
     right: -30px;;
 }
 
+.div-img img{
+    height: 100%;
+    object-fit: cover;
+}
+
 .botao{
     padding: 10px 20px;
     background-color: #fcb404;
@@ -102,6 +110,8 @@ main{
     text-transform: uppercase;
     font-size: 64px;
     padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     color: #c5c5c5;
 }
 
@@ -133,10 +143,21 @@ main{
 }
 
 footer{
+    margin-top: 30px;
     text-align: center;
     padding: 30px;
     background-color: white;
     width: 100%;
     box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    .introducao::before{
+        background-color: transparent;
+    }
 }
 
