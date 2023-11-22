@@ -84,7 +84,6 @@ main h2{
 }
 
 .container-exemplos{
-    margin: 0px;
     display: grid;
     justify-content: center;
     margin-left: -50px;
@@ -93,26 +92,24 @@ main h2{
 .exemplos{
     list-style: none;
     max-width: 70vh;
-    margin: 0px;
 }
 
 .exemplos li{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 10px;
-    margin-left: 0px;
 }
 
-.exemplos h4{
-    margin: 0px;
-    padding-left: 20px;
-    padding-top: 20px;
-    margin-left: 0px;
+.exemplos li .exemplos-descricao{
+    display: grid;
+    justify-content: center;
+}
+
+.exemplos li h4{
+    margin-bottom: 10px;
 }
 
 .exemplos img{
     max-width: 100%;
-    margin-left: 0px;
 }
 
 .exemplos a{
@@ -125,7 +122,6 @@ main h2{
     padding: 20px;
     border: 1px solid transparent;
     margin-top: 10px;
-    margin-left: 0px;
 }
 
 .exemplos a:hover{
@@ -134,7 +130,6 @@ main h2{
 
 .exemplos li:nth-child(2n){
     background-color: rgb(236, 236, 236);
-    border: 5px;
 }
 
 footer{
@@ -184,7 +179,7 @@ footer{
 
     @media(max-width:500px){
         header h1{
-            font-size: 1.9rem;
+            font-size: 1.5rem;
         }
     }
 }
