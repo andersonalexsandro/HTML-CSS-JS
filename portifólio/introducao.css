@@ -1,0 +1,23 @@
+.introducao{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.introducao h1{
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.introducao h1::before{
+    content: "";
+    background: linear-gradient(to bottom, #3498db, #ffffff);
+    position: absolute;
+    z-index: -1;
+    size: 10%;
+}
