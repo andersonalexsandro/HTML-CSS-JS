@@ -3,9 +3,9 @@
     padding: 40px 20px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
 }
 
 .introducao h1{
@@ -16,8 +16,86 @@
 
 .introducao h1::before{
     content: "";
-    background: linear-gradient(to bottom, #3498db, #ffffff);
+    height: 15px;
+    width: 90px;
+    background: linear-gradient(to bottom right, rgb(25, 0, 168), #12e4f3);
     position: absolute;
+    transform: rotate(140deg); 
     z-index: -1;
-    size: 10%;
+    top: 15px;
+    left: -40px;
+}
+
+.introducao h1::after{
+    content: "";
+    height: 15px;
+    width: 90px;
+    background: linear-gradient(to bottom right, rgb(25, 0, 168), #12e4f3);
+    position: absolute;
+    transform: rotate(140deg); 
+    z-index: -1;
+    top: 18px;
+    left: -20px;
+}
+
+.introducao p{
+    font-size: 1.5rem;
+    color: #525252;
+}
+
+@media (max-width: 1000px) {
+
+    .introducao{
+        grid-template-columns: 1fr 2.5fr;
+    }
+
+    .introducao h1{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .introducao h1::before{
+        content: "";
+        height: 10px;
+        width: 60px;
+        background: linear-gradient(to bottom right, rgb(25, 0, 168), #12e4f3);
+        position: absolute;
+        transform: rotate(140deg); 
+        z-index: -1;
+        top: 12px;
+        left: -25px;
+    }
+    
+    .introducao h1::after{
+        content: "";
+        height: 10px;
+        width: 60px;
+        background: linear-gradient(to bottom right, rgb(25, 0, 168), #12e4f3);
+        position: absolute;
+        transform: rotate(140deg); 
+        z-index: -1;
+        top: 11px;
+        left: -8px;
+    }
+
+    .introducao p{
+        font-size: 1rem;
+        color: #525252;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img{
+        display: none;
+    }
+
+    .introducao-descricao{
+        margin: 0 auto;
+    }
 }
