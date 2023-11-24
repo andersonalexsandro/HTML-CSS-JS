@@ -46,42 +46,29 @@
 @media (max-width: 1000px) {
 
     .introducao{
-        grid-template-columns: 1fr 2.5fr;
+        gap: 50px;
     }
 
     .introducao h1{
-        font-size: 2rem;
-        margin-bottom: 20px;
-        position: relative;
+        font-size: 2.5rem;
     }
 
     .introducao h1::before{
-        content: "";
         height: 10px;
         width: 60px;
-        background: linear-gradient(to bottom right, rgb(25, 0, 168), #12e4f3);
-        position: absolute;
-        transform: rotate(140deg); 
-        z-index: -1;
         top: 12px;
         left: -25px;
     }
     
     .introducao h1::after{
-        content: "";
         height: 10px;
         width: 60px;
-        background: linear-gradient(to bottom right, rgb(25, 0, 168), #12e4f3);
-        position: absolute;
-        transform: rotate(140deg); 
-        z-index: -1;
         top: 11px;
         left: -8px;
     }
 
     .introducao p{
         font-size: 1rem;
-        color: #525252;
     }
 }
 
