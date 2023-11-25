@@ -92,6 +92,7 @@
 
 .formacao-extra li{
     margin-bottom: 10px;
+    font-size: 1.125rem;
 }
 
 .formacao-extra .cursos h3::before{
@@ -122,4 +123,85 @@
     position: absolute;
     background: url("./img/traduzir.png") no-repeat;
     left: -25px;
+}
+
+.cursos li{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px){
+    .formacao-container{
+        column-gap: 50px;
+        row-gap: 20px;
+    }
+
+    .formacao-texto{
+        font-size: 1rem;
+    }
+
+    .formacao .subtitulo{
+        font-size: 4.5rem;
+    }
+
+    .formacao-tipo{
+        font-size: 0.7rem;
+    }
+
+    .formacao-extra h3{
+        font-size: 0.75rem;
+    }
+
+    .formacao-extra li{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 800px){
+    .formacao-container{
+        display: grid;
+        grid-template-columns:  1fr;
+        align-items: center;
+    }
+
+    .formacao-container .subtitulo{
+        color: #ffffff;
+        max-width: initial;
+        font-size: 3.5rem;
+        text-transform: capitalize;
+    }
+
+    .formacao{
+        padding-left: 10px;
+    }
+
+    .formacao-lista{
+        flex-direction: column;
+        max-width: 250px;
+    }
+
+    .formacao-container li{
+        font-size: 0.9rem;
+        position: relative;
+    }
+
+    .formacao-extra li::before{
+        content: "-";
+        position: absolute;
+        left: -8px;
+    }
+
+    .cursos li{
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .instituto-tempo{
+        text-align: end;
+    }
+
+    .cursos li{
+        margin-bottom: 20px;
+    }
 }
