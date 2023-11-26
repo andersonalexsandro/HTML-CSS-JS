@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="name" required>
+
+        <label for="cpf">CFP</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="age" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha</label>
+        <input type ="password" id="senha" name="passoword" required>
+
+        <label for="saida">Senha</label>
+        <input type ="date" id="saida" name="saida" required>
+        
+        <div class="checkbox">
+            <input type="checkbox" id="termos" name="termos" value="true">
+            <label for="termos">Aceito os termos de condições da empresa.</label>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="anuncio" name="anuncio" value="true">
+            <label for="anuncio">Aceito receber anúncios.</label>
+        </div>
+
+        <p>Entrega:</p>
+
+        <div class="radio">
+            <input type="radio" id="local" name="retirada" value="true">
+            <label for="local">Retirada no Local</label>
+        </div>
+
+        <div class="radio">
+            <input type="radio" id="casa" name="retirada" value="true">
+            <label for="casa">Receber em casa</label>
+        </div>
+
+        <label for="parcelas">Opções de parcelas</label>
+        <select name="parcelas" id="parcelas">
+            <option value="1x">1 x R$49,99</option>
+            <option value="2x">2 x R$24,99</option>
+            <option value="3x">3 x R$16,33</option>
+            <option value="4x">4 x R$12,50</option>
+        </select>
+            
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem"></textarea>
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

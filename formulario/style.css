@@ -1,0 +1,29 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+label{
+    display: block;
+}
+
+input{
+    font-size: 1.2rem;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+
+}
+
+button{
+    display: block;
+    margin-top: 10px;
+}
+
+.checkbox, .radio{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+}
